@@ -1,0 +1,312 @@
+
+@import "./carousel.scss";
+@import "./carousel";
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+    display: flex;
+    background-color: white;
+    height: 100px;
+    box-shadow: 0px 1px 5px gray;
+}
+
+ul{
+   position: absolute;
+   right: 50px;
+   top: 20px;
+}
+
+
+.navbar{
+    color: #0B406A;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 36px;
+    align-self: center;
+    justify-content: center;
+}
+
+.navbar:hover{
+    color: #185ADB;
+}
+
+.logo{
+    width: 205px;
+    height: 85px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 1400px;
+    height: 1000px;
+    background-image: url('../images/background.jpg');
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    width: 100%;
+    height:700px ;
+    h1{
+        font-size: 80px;
+        color: white;
+        font-weight: bold;
+        
+    }
+    p{
+        color: white;
+        font-size: 36px;
+        align-self: center;
+        width: 950px;
+        margin-top: 0px;
+              font-weight: bold;
+    }
+}
+
+.prodhimet{
+    font-size: 64px;
+    color: #0B406A;
+    text-align: center;
+}
+
+.prodhimet1{
+    display: flex;
+    .arka1{
+    width: 300px;
+    height: 340px;
+
+    }
+    .text1{
+        width: 297px;
+        height: 500px;
+        color: #0B406A;
+        margin-left: 30px;
+        h2{
+            font-size: 40px;
+            margin: 0px;
+            padding: 0px;
+        }
+        p{
+            font-size: 26px;
+        }
+    }
+   
+}
+.gypa1{
+        margin-left: 100px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #0B406A;
+    }
+
+.prodhimet2{
+    display: flex;
+    margin-top: 80px;
+    .ulset{
+        margin-left: 100px;
+        img{
+            width: 457px;
+            height: 350px;
+        }
+        .text3{
+            width: 401px;
+            color: #0B406A;
+            text-align: center;
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 26px;
+            }
+        }
+    }
+
+    .ark{
+        margin-left: 200px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+// html, body {
+//   margin: 0;
+//   padding: 0;
+//   width: 100%;
+//   height: 50%;
+// }
+
+.all {  
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background .4s ease-in;
+
+  box-sizing:border-box ;
+  
+ 
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.carosel {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+// .player {
+//   background-color: #fff;
+//   border-radius: 8px;
+//   min-width: 320px;
+//   padding: 16px 10px;
+// }
+
+// .upper-part {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 12px;
+//   height: 36px;
+//   overflow: hidden;
+// }
+
+// .play-icon{ margin-right: 10px; }
+
+// .song-info {
+//   width: calc(100% - 32px);
+//   display: block;
+// }
+
+// .song-info .title {
+//   color: #403d40;
+//   font-size: 14px;
+//   line-height: 24px;
+// }
+
+// .sub-line {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+// }
+
+// .subtitle, .time {
+//   font-size: 12px;
+//   line-height: 16px;
+//   color: #c6c5c6;
+// }
+
+// .time {
+//   font-size: 12px;
+//   line-height: 16px;
+//   color: #a5a5a5;
+//   font-weight: 500;
+//   margin-left: auto;
+// }
+
+// .progress-bar {
+//   height: 3px;
+//   width: 100%;
+//   background-color: #e9efff;
+//   border-radius: 2px;
+//   overflow: hidden;
+// }
+
+// .progress {
+//   display: block;
+//   position: relative;
+//   width: 60%;
+//   height: 100%;
+//   background-color: #2992dc;
+//   border-radius: 6px;
+// }
+
+// .info-area {
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 30px;
+//   transition: transform .4s ease-in;
+// }
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
