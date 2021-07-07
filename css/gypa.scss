@@ -1,0 +1,28 @@
+@import "./navbar";
+
+p{
+    color: #0B406A;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 0px;
+}
+
+
+.big{
+    margin-top: 20px;
+   width: 60%;
+   height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+.detalet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img{
+        width: 350px;
+        height: 250px;
+    }
+}

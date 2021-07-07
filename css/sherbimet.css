@@ -1,0 +1,433 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 100px;
+  -webkit-box-shadow: 0px 1px 5px gray;
+          box-shadow: 0px 1px 5px gray;
+}
+
+ul {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+.navbar {
+  color: #0B406A;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 36px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar:hover {
+  color: #185ADB;
+}
+
+.logo {
+  width: 205px;
+  height: 85px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.animacion {
+  margin-bottom: 110px;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+figure.card {
+  margin-left: 100px;
+  position: relative;
+  width: 480px;
+  height: 547px;
+  background-image: var(--image-src);
+  background-position: 50% 50%;
+  background-size: 125%;
+  -webkit-transition: background 400ms ease;
+  transition: background 400ms ease;
+  -webkit-box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+figure.card:hover figcaption {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+figure.card--1:hover {
+  background-position: 50% 100%;
+}
+
+figure.card--1 figcaption {
+  bottom: 0;
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
+}
+
+figure.card--2 {
+  background-size: 110%;
+}
+
+figure.card--2:hover {
+  background-position: 50% -400%;
+}
+
+figure.card--2 figcaption {
+  top: 0;
+  -webkit-transform: translateY(-480px);
+          transform: translateY(-480px);
+}
+
+figure.card--3 {
+  background-size: 105%;
+}
+
+figure.card--3:hover {
+  background-position: -100% 50%;
+}
+
+figure.card--3 figcaption {
+  left: 0;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+}
+
+figure.card--4:hover {
+  background-position: 100% 50%;
+}
+
+figure.card--4 figcaption {
+  right: 0;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+}
+
+figure.card--1 figcaption, figure.card--2 figcaption {
+  width: 100%;
+  height: 3 200px;
+  padding: 15px 20px;
+}
+
+figure.card--3 figcaption, figure.card--4 figcaption {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+figure.card figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background: #0B406A;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+figure.card figcaption .others {
+  width: 200px;
+}
+
+figure.card figcaption .info {
+  color: #e2e2e2;
+  font-family: "Montserrat",sans-serif;
+  width: 600px;
+}
+
+figure.card figcaption .info h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+figure.card figcaption .info span {
+  color: white;
+  font-size: 16px;
+}
+
+figure.card figcaption .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+figure.card figcaption .links a {
+  text-decoration: none;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  opacity: 0.65;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+figure.card figcaption .links a:hover {
+  opacity: 1;
+}
+
+figure.card figcaption .links a:focus {
+  outline: none;
+}
+
+figure.card figcaption .links a:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+figure.card figcaption .links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  z-index: -1;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .container {
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 80px 0;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #0B406A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer a {
+  width: 60px;
+  height: 65px;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.footer .phone {
+  width: 60px;
+  height: 65px;
+  margin-top: 20px;
+  margin-left: 550px;
+}
+
+.footer p {
+  font-size: 36px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.footer img {
+  width: 60px;
+  height: 65px;
+}
+
+.krejt {
+  width: 100%;
+  height: 700px;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #0B406A;
+  margin-top: 180px;
+}
+
+.lokacion {
+  width: 486px;
+  color: #0B406A;
+  font-size: 26px;
+  margin-left: 40px;
+  display: inline-block;
+  margin-top: 10px;
+  position: absolute;
+  top: 1150px;
+}
+
+.map {
+  display: inline;
+  margin-left: 540px;
+  width: 780px;
+  margin-bottom: 100px;
+}
+
+.gypa3 {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.detale {
+  color: #0b406a;
+  width: 240px;
+  height: 40px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 3px;
+  margin-top: 640px;
+  margin-left: 330px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.detale:hover {
+  background-color: #29BB89;
+}
+
+.first {
+  background-image: url("..//images/pomduhet.png");
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  margin-top: 13px;
+  -webkit-box-shadow: 0px 1px 5px gray;
+          box-shadow: 0px 1px 5px gray;
+}
+
+.third {
+  background-image: url("..//images/pomduhet2.png");
+  height: 580px;
+}
+
+.fourth {
+  background-image: url("..//images/pomduhet3.png");
+  height: 580px;
+}
+
+.fifth {
+  background-image: url("..//images/pomduhet4.png");
+}
+
+.buton2 {
+  margin-top: 520px;
+}
+
+.buton3 {
+  margin-top: 520px;
+}
+
+.lgbtq {
+  margin-top: 20px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.produktet {
+  width: 98%;
+  height: 800px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.sherbimet h2 {
+  font-size: 50px;
+  color: #0B406A;
+  text-align: center;
+}
+
+.sherbimet p {
+  font-size: 36px;
+  color: #0B406A;
+  text-align: center;
+  width: 1300px;
+}
+
+.animacionet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.animacionet .rrushark {
+  width: 441px;
+  height: 447px;
+  margin-left: 125px;
+}
+
+.animacionet .arkholandeze, .animacionet .sponzor {
+  margin-top: 100px;
+}
+
+.animacionet .sponzor, .animacionet .ulese {
+  margin-left: 200px;
+}
+/*# sourceMappingURL=sherbimet.css.map */

@@ -1,0 +1,71 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 100px;
+  -webkit-box-shadow: 0px 1px 5px gray;
+          box-shadow: 0px 1px 5px gray;
+}
+
+ul {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+.navbar {
+  color: #0B406A;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 36px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar:hover {
+  color: #185ADB;
+}
+
+.logo {
+  width: 205px;
+  height: 85px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+p {
+  color: #0B406A;
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 0px;
+}
+
+.big {
+  margin-top: 20px;
+  width: 60%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.detalet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.detalet img {
+  width: 350px;
+  height: 250px;
+}
+/*# sourceMappingURL=gypa.css.map */
