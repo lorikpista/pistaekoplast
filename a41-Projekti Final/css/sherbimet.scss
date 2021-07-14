@@ -1,0 +1,49 @@
+@import "./navbar";
+@import "./animacion";
+@import "./footer";
+@import "./kontakt";
+@import "./produktet";
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.produktet{
+    width: 98%;
+    height: 800px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sherbimet{
+    h2{
+        font-size: 50px;
+        color: #0B406A;
+        text-align: center;
+    }
+    p{
+        font-size: 36px;
+        color: #0B406A;
+         text-align: center;
+         width: 1300px;
+    }
+}
+
+
+.animacionet{
+    display: flex;
+    flex-wrap: wrap;
+   
+    .rrushark{
+    width: 441px;
+    height: 447px;
+    margin-left:125px;
+}
+.arkholandeze,.sponzor{
+    margin-top: 100px;
+}
+.sponzor,.ulese{
+    margin-left: 200px;
+}
+}
+
+
